@@ -1,0 +1,23 @@
+data;
+
+set machines := type_A  type_B type_C;
+
+param MaxIronAvailability := 4800;  # Maximum available iron
+param IronCostPerKg := 4;
+param extra_budget := 800;
+param extra_iron_cost := 7;
+
+param IronPerMachine :=
+type_A    1
+type_B    1
+type_C    2;
+
+param Profit :=
+type_A     27
+type_B     21
+type_C     33;
+
+param CostManufacturing :=
+type_A    11
+type_B    6
+type_C    5;

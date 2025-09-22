@@ -1,0 +1,28 @@
+reset;
+
+model machine.mod;
+
+data machine.dat;
+
+option solver gurobi; # CHANGE THIS ACCORDING TO YOUR VERSION!
+
+
+
+solve;
+
+
+
+display quantity;
+
+display Sales;
+
+
+let MaxIronAvailability := max_iron;
+solve;
+
+display quantity;
+
+
+display Sales;
+
+
